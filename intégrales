@@ -1,0 +1,16 @@
+Méthode des trapèzes:
+
+def int_trapez (f, a, b, N):
+ h = (b - a) / N
+ result = f(a)/2 + f(b)/2 # boundary points
+ for k in range (1, N): # interior points
+  result += f(a + k*h)
+ result *= h
+ return result
+print ("I =", int_trapez (np.cos , 0, pi , 10000) )
+
+Méthode des trapèzes adaptative:
+
+
+Méthode de simpson:
+
